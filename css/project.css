@@ -1,0 +1,162 @@
+@charset "utf-8";
+body{
+	background-color:#fafafa;
+}
+
+
+.content{
+	width:1000px;
+	margin:110px auto;
+}
+.title{
+	width:100%;
+	text-align:center;
+	margin-top:50px;
+}
+
+.title{
+	text-align:center;
+	margin-top:50px;
+	width:100%;
+	height:100px;
+	position:relative;
+}
+.title .span01{
+	position:absolute;
+	font-size:24px;
+	left:400px;
+	top:35px;
+	color:#000;
+}
+.title .span02{
+	position:absolute;
+	font-size:24px;
+	left:502px;
+	top:35px;
+	color:#319ef1;
+}
+
+.qiehuan ul{
+	width:460px;
+	margin:26px auto;
+}
+
+.qiehuan ul li{
+	float:left;
+	font-size:18px;
+	padding-left:8px;
+	padding-right:8px;
+	margin-right:20px;
+	color:#333333;
+	height:28px;
+	line-height:28px;
+	border-radius: 4px;
+	cursor:pointer;
+}
+
+.qiehuan ul .show{
+	border:1px solid #319ef1;
+	color:#319ef1;
+}
+
+.qiehuan ul .noshow p:hover{
+	color:#319ef1;
+}
+.xiangmu{
+	width:960px;
+	margin:40px auto;
+}
+.xiangmu .nr{
+	width:960px;
+	height:233px;
+	background-color:#fff;
+}
+
+.xiangmu .nr .name{
+	width:920px;
+	height:94px;
+	margin:0 auto;
+	border-bottom:1px solid #e0e0e0;
+}
+
+.xiangmu .nr .name .p1{
+	line-height:94px;
+	height:94px;
+	font-size:28px;
+}
+
+.xiangmu .nr .name .p2{
+	line-height:38px;
+	height:38px;
+	width:128px;
+	text-align:center;
+	font-size:16px;
+	color:#319ef1;
+	border:1px solid #319ef1;
+	border-radius:20px;
+	margin-top:26px;
+}
+.xiangmu .nr .name .p2:hover{
+	color:#fff;
+	background-color:#319ef1;
+	
+}
+
+.xiangmu .nr .xiangxi{
+	width:920px;
+	margin:0 auto;
+}
+.xiangmu .nr .xiangxi .p1{
+	margin-top:10px;
+}
+.xiangmu .nr .xiangxi p{
+	color:#969696;
+	font-size:16px;
+	line-height:40px;
+}
+
+.nomore{
+	width:128px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background-color:#319ef1;
+	color:#fff;
+	border-radius:20px;
+	margin:0 auto;
+}
+
+.lianxi{
+	width:956px;
+	height:62px;
+	border:1px solid #319ef1;
+	margin-bottom:50px;
+	border-radius:4px;
+}
+
+.lianxi .p1{
+	height:62px;
+	line-height:62px;
+	font-size:16px;
+	margin-left:28px;
+	color:#969696;
+}
+
+.lianxi .p2{
+	height:40px;
+	line-height:40px;
+	width:130px;
+	font-size:16px;
+	text-align:center;
+	color:#fff;
+	background-color:#319ef1;
+	border-radius:20px;
+	margin-right:19px;
+	margin-top:12px;
+}
+
+.lianxi .p2:hover{
+	background-color:#33a4fb;
+}
+
+

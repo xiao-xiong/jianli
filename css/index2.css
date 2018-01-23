@@ -1,0 +1,429 @@
+@charset "utf-8";
+*,html,body,div,p,dl,dt,dd,h1,h2,h3,h4,h5,form,input,table,tr,td,ul,ol,li,span,img,a{
+	margin:0;
+	padding:0;
+	margin-left:auto; margin-right:auto;/*兼容ie9，还需*/
+	letter-spacing: normal;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;/*去除边距的宽度*/
+	font-family: "Microsoft Yahei","Arial","Georgia","serif","sans-serif";
+}
+*, *:before, *:after {box-sizing: inherit;}
+body{
+	letter-spacing: normal;
+	
+	background:#002839;
+}
+ul li{list-style: none;}
+img{border:none;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:focus{text-decoration: none;}
+.clearfix{clear:both;}
+/*以上是公共样式*/
+
+.carousel-inner .item img{
+	width: 100%;
+}
+
+.navbar .navbar-header .navbar-toggle {
+    position: absolute;
+    left: 50%;
+    margin-left: -22px;
+}
+.language{
+	position:absolute;
+	top:14px;
+	right:15px;
+}
+.language span{display: block;	width:22px; height:22px; margin-right:20px;}
+.language span img{width:100%;display: block;}
+.language span{float:left;}
+
+.banner{
+	width:100%;
+	margin-top:50px;
+}
+.swiper-container {
+    width: 100%;
+}
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    height:375px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+	background-size: cover;
+	background-position: center center;
+}
+.swiper-slide img{
+	width:100%;
+}
+
+.language-span{cursor:pointer;}
+.language-div{position:absolute; width:120px; height:120px; right:0px; bottom:-134px; z-index:9999; display:none;}
+.language-div img{width:100%; display: block;}
+.none{display:block;}
+
+.introduce{overflow: hidden; margin-top:60px; margin-bottom:60px; padding-left: 10px; padding-right: 10px; width: 100%; background-color: #002839; color: #fff;}
+
+.a-link {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.65);
+    display: inline-block;
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    color: rgba(255,255,255,0.65);
+    display: inline-block;
+    line-height: 40px;
+    font-size: 18px;
+    z-index: 1;
+    cursor:pointer;
+}
+.a-link:hover{
+	color:#fff;
+}
+.a-link:after{
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    width: 0;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #49C9DE;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    z-index: -1;
+}
+.a-link2:after{
+	width:103%;
+}
+
+.touxiang{
+	display: block;
+	border-radius:50%;
+}
+.introduce .row{margin-bottom:30px;}
+.jobs .row{max-width: 970px; margin:0 auto;}
+.introduce-h4 h4{font-size:14px; font-weight:400; line-height:20px; color:#fff;}
+
+.service{
+    background: url("../images/hero.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.service .container-fluid{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+.service .col-sm-3{
+    padding-left: 0;
+    padding-right: 0;
+    height: 250px;
+    color: #f6f7ff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.service .col-sm-3:hover{
+	background-color: rgba(0,0,0,0.8);
+    color: #49C9DE;
+}
+.service .col-sm-3:hover .mask-item p{height:80px}
+.service .col-sm-3 .mask-item{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.service .col-sm-3 .mask-item .idea-icon{
+    margin-top: 35px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.service .col-sm-3 .mask-item p {
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 0;
+    -webkit-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+    overflow: hidden;
+}
+.service .col-sm-3 .mask-item .idea-icon i{
+	color:#fff;
+	font-size:4em;
+}
+.service .col-sm-3 .mask-item h3{
+	font-size:24px;
+	margin-bottom:10px;
+	margin-top:10px;
+	color:#fff;
+	font-weight:bold;
+}
+.service .col-sm-3 .mask-item p{
+	font-size:14px;
+	color:#fff;
+}
+.service .col-sm-3:hover .mask-item .idea-icon i{color:#78c3fd;}
+.service .col-sm-3:hover .mask-item h3{color:#78c3fd;}
+.service .col-sm-3:hover .mask-item p{color:#78c3fd;}
+
+.introduce-h4{margin-bottom: 50px; line-height:1.4; font-size:18px; font-weight:400; color:#fff;}
+
+.project{
+    margin-bottom:60px;
+    margin-top:60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.project .thumb {
+    padding-top:15px;
+    padding-bottom:15px;
+    overflow: hidden;
+}
+.project .thumb a {
+    display: block;
+}
+.project .thumb .over-hid{
+	overflow: hidden;
+	position: relative;
+}
+.project .thumb .over-hid img{
+	-webkit-transition: all .3s;
+    transition: all .3s;
+    min-height:100%;
+}
+.describe{
+    height:34px;
+    line-height:34px;
+    width: auto;
+    color: rgba(0,0,0,0.8);
+    background-color: #fff;
+}
+.project .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.project .thumb a:hover {
+    box-shadow: 0 0 7px #5ec6d2;
+}
+.project .thumb:hover .img-responsive {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.project .thumb:hover .mask {
+    opacity: 1;
+    z-index: 10;
+}
+.project-genduo{
+	margin-top:30px;
+}
+.title{margin-top: 0; margin-bottom:20px; color: #49C9DE;}
+.list{
+	margin-top:100px;
+	margin-bottom:80px;
+}
+.list .list-t{
+	margin-bottom:80px;
+	margin-top:10px;
+}
+.list .list-t h1{
+    color: #49C9DE;
+    font-size:36px;
+}
+
+.list .menu{
+	margin-bottom:50px;
+	width:100%;
+}
+.list .menu button{
+	margin-bottom:20px;
+}
+
+
+.jobs{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.jobs .list-t {
+    margin-bottom: 80px;
+    margin-top: 10px;
+}
+.jobs .list-t h1 {
+    color: #49C9DE;
+    font-size: 36px;
+    display: block;
+}
+.list-group .list-group-item{
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+    margin-bottom: -1px;
+    background-color: rgba(5,51,85,0.5);
+    border: 1px solid #6B6B6B;
+}
+.list-group .list-group-item:hover{
+	text-decoration: none;
+    color: #fff;
+    background-color: #07181c;
+}
+a.list-group-item:focus{
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+    margin-bottom: -1px;
+    background-color: rgba(5,51,85,0.5);
+    border: 1px solid #6B6B6B;
+}
+.list-group .list-group-item .list-group-item-heading{
+	color:#fff;
+	font-size:20px;
+}
+.row-i{
+	position:absolute;
+	font-style:normal;
+	color:#fff;
+	right:15px;
+}
+
+.collapse table tbody tr th{
+	color:#fff;
+}
+.collapse table tbody tr td{
+	color:#fff;
+}
+
+.mar-bot30{
+	margin-bottom:20px;
+}
+.mar-bot30 i{
+	font-size:40px;
+	color:#48c9df;
+}
+.address h4{
+	font-weight:400;
+	color:#fff;
+	font-size:18px;
+}
+.address h4 a{
+	font-weight:400;
+	color:#fff;
+	font-size:18px;
+}
+.contact>div{
+	background-color: rgba(0,0,0,0.5);
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+footer{background:#000;}
+.footer-a{
+	padding-top:30px;
+	padding-bottom:20px;
+}
+.footer-a a{
+	margin:0 10px;
+}
+.footer-a a>i{
+	color:#fff;
+}
+.footer-div{
+	padding-bottom:40px;
+}
+.footer-div div{
+	font-size:14px;
+	color:#fff;
+}
+
+.footer-a .tip{
+    position: absolute;
+    bottom: 28px;
+    right: -41px;
+    overflow: hidden;
+    width: 110px;
+    height: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+	z-index:1;
+}
+.footer-a .a{
+	position:relative;
+}
+.footer-a .a:hover .tip{
+	height:118px;
+}
+.footer-div div a{
+	color:#fff;
+}
+.footer-div div a:hover{
+	color:#fff;
+}
+
+
+/*没有小于768px，是因为bootstrap以移动端优先设计，以上都是为移动端小于768px的默认设计样式*/
+
+/*小屏幕（平板、大于等于768px）*/
+@media (min-width: 768px){
+.navbar-right{margin-right:20px;}
+.language{float:right; height:22px; position:relative; top:14px;}
+
+.service .col-sm-3{height:400px;}
+.service{height:400px;}
+.contact>div{background:none;}
+.swiper-slide{height:auto;}
+.title{margin-bottom:40px;}
+.describe{height:54px; line-height:54px;}
+
+.a-link{
+	width:130px;
+	height:50px;
+	line-height:50px;
+}
+.a-link:after{
+	height:50px;
+	border-radius:50px;
+}
+.introduce-h4 h4{font-size:18px;}
+
+
+}
+
+/*中屏幕（桌面显示器、大于等于992px）*/
+@media (min-width: 992px){
+
+}
+
+/*大屏幕（大桌面显示器、大于等于1200px）*/
+@media (min-width: 1200px){
+	
+}
